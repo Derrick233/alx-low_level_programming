@@ -8,18 +8,17 @@
  */
 int main(void)
 {
-	int x;
+	int digit;
 
-	for (x = 0 ; x < 10 ; x++)
+	for (digit = 0 ; digit < 10 ; digit++)
 	{
-		if (x == 9)
-			putchar(x + '0');
-		else
-		{
-			putchar(x + '0');
+		putchar((digit % 10) + '0');
+
+		if (digit == 9)
+				continue;
 			putchar(',');
 			putchar(' ');
-		}
 	}
+	putchar('\n');
 	return (0);
 }
