@@ -11,6 +11,6 @@ int main(void)
 	int character;
 
 	for (character = 0 ; character < 10 ; character++)
-		printf("%d", character);
+	printf("%d", character);
 	return (0);
 }
