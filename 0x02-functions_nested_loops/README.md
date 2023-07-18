@@ -1,0 +1,1 @@
+This project consists of a collection of code examples that demonstrate the implementation and usage of functions and nested loops in the C programming language. It aims to provide developers with practical illustrations and explanations to understand how functions and nested loops can be utilized in their own programs, enabling them to write more organized and efficient code
