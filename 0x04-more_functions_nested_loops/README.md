@@ -1,0 +1,1 @@
+This project is a continuation of the C - Functions, nested loops project, where we explored the basics of functions and nested loops in the C programming language. In this iteration, we delve further into the topic by introducing more functions and nested loops.
