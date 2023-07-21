@@ -1,21 +1,47 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * more_numbers - Prints 10 times the numbers from 0 to 14
+ * fizz_buzz - Prints the numbers from 1 to 100, following Fizz-Buzz rules.
+ *
+ * For multiples of three, print "Fizz".
+ * For multiples of five, print "Buzz".
+ * For numbers which are multiples of both three and five, print "FizzBuzz".
+ * Each number or word should be separated by a space.
  */
-void more_numbers(void)
+void fizz_buzz(void)
 {
-	int i, j;
+	int i;
 
-	for (i = 0; i < 10; i++)
+	for (i = 1; i <= 100; i++)
 	{
-		for (j = 0; j <= 14; j++)
+		if (i % 3 == 0 && i % 5 == 0)
 		{
-			if (j > 9)
-				_putchar('0' + j / 10);
-			_putchar('0' + j % 10);
+			printf("FizzBuzz");
 		}
-		_putchar('\n');
+		else if (i % 3 == 0)
+		{
+			printf("Fizz");
+		}
+		else if (i % 5 == 0)
+		{
+			printf("Buzz");
+		}
+		else
+		{
+			printf("%d", i);
+		}
+
+		if (i < 100)
+		{
+			printf(" ");
+		}
 	}
+	printf("\n");
+}
+
+int main(void)
+{
+	fizz_buzz();
+	return 0;
 }
 
