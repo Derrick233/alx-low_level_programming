@@ -3,10 +3,10 @@
 
 void positive_or_negative(int i)
 {
-	if (a > 0)
-		printf("%d is positive\n", a);
-	else if (a == 0 )
-		printf ("%d is zero\n", a);
+	if (i > 0)
+		printf("%d is positive\n", i);
+	else if (i == 0 )
+		printf ("%d is zero\n", i);
 	else
-		printf("%d is negative\n", a);
+		printf("%d is negative\n", i);
 }
