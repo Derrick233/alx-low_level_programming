@@ -1,0 +1,1 @@
+This directory contains examples and exercises related to debugging C programs. Debugging is an essential skill for any programmer, as it helps identify and fix issues in the code, ensuring the program works as intended
