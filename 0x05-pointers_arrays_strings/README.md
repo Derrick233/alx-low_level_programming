@@ -1,0 +1,1 @@
+Welcome to the C - Pointers, Arrays, and Strings project! This project is designed to help you learn and practice working with pointers, arrays, and strings in the C programming language. These concepts are fundamental to mastering C and are widely used in various programming tasks.
