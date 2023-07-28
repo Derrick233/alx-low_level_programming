@@ -1,0 +1,1 @@
+This repository contains C programming language code that focuses on more advanced concepts related to pointers, arrays, and strings. The code examples and functions provided in this project aim to improve understanding and proficiency in handling complex data structures and manipulating strings efficiently in C.
