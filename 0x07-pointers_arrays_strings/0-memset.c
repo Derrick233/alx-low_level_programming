@@ -7,7 +7,7 @@
  *
  * Return: pointer to the destination memory buffer ('s').
  */
- char *_memset(char *s, char b, unsigned int n)
+char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int num;
 
