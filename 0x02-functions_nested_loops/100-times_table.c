@@ -2,39 +2,44 @@
 
 /**
  * print_times_table - Prints the n times table, starting with 0
- * @n: The number to be printed
+ * @n: The number that determines the timetable
  *
- * Return: void
+ * Return: nothing on success
  */
 void print_times_table(int n)
 {
-	int x, y, result;
+	int num, mult, result;
 
-	if (n >= 0 && n < 15)
+	if (n >= 0 && n <= 15)
 	{
-		for (x = 0; x <= n; x++)
+		for (num = 0; num <= n; num++)
 		{
 			_putchar('0');
-			for (y = 1; y <= n; y++)
+
+			for (mult = 1; mult <= n; mult++)
 			{
 				_putchar(',');
 				_putchar(' ');
 
-				result = x * y;
-				if (result <= 9)
-				{
-					_putchar(' ');
-				}
+				result = num * mult;
+
 				if (result <= 99)
-				{
 					_putchar(' ');
+				if (result <= 9)
+					_putchar(' ');
+
+				if (result >= 100)
+				{
+					_putchar((result / 100) + '0');
+					_putchar(((result / 10)) % 10 + '0');
 				}
-				_putchar((result / 100) + '0');
-				_putchar(((result / 10) % 10) + '0');
+				else if (result <= 99 && result >= 10)
+				{
+					_putchar((result / 10) + '0');
+				}
 				_putchar((result % 10) + '0');
 			}
 			_putchar('\n');
 		}
 	}
 }
-
